@@ -1,0 +1,17 @@
+server:
+  port:  8010
+
+spring:
+  application:
+    name: s3bucketapp
+  servlet:
+    multipart:
+      max-file-size: 10MB # Max size for a single file
+      max-request-size: 50MB # Max size for the entire request (all files combined)
+
+aws:
+  s3:
+    secret-key: XXXXXXXXXXXXXXXXXXXXXXXXXX
+    region: XXXXXXXXXXXXXXXXXXXXXXXXXX
+    access-key: XXXXXXXXXXXXXXXXXXXXXXXXXX
+    bucket-name: XXXXXXXXXXXXXXXXXXXXXXXXXX
